@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e98270">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bonjour France">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="description" content="Discover five beautiful cities in France with Bonjour France.">
+  <title>Bonjour, France! | A Little Travel Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#home" class="logo">bonjour, france <span>♡</span></a>
+
+    <div class="nav-note" data-en="A LITTLE JOURNEY THROUGH FRANCE"
+         data-fr="UN PETIT VOYAGE EN FRANCE">
+      A LITTLE JOURNEY THROUGH FRANCE
+    </div>
+
+    <button id="languageButton" class="language-button" type="button">
+      EN / FR
+    </button>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <p class="eyebrow" data-en="FIVE CITIES · A THOUSAND DISCOVERIES"
+         data-fr="CINQ VILLES · MILLE DÉCOUVERTES">
+        FIVE CITIES · A THOUSAND DISCOVERIES
+      </p>
+
+      <h1>
+        <span data-en="A little further," data-fr="Un peu plus loin,">
+          A little further,
+        </span>
+        <em data-en="a lot more France." data-fr="beaucoup plus de France.">
+          a lot more France.
+        </em>
+      </h1>
+
+      <p class="hero-description"
+         data-en="France is more than its famous landmarks. Discover the riverside beauty of Lyon, the sunny Mediterranean coast of Nice, the charming streets of Strasbourg, the elegance of Bordeaux and the lively harbour of Marseille. Explore their stories, food, culture and local experiences with us."
+         data-fr="La France ne se résume pas à ses monuments célèbres. Découvrez les paysages de Lyon, la côte ensoleillée de Nice, les charmantes rues de Strasbourg, l'élégance de Bordeaux et le port animé de Marseille. Explorez avec nous leurs histoires, leur gastronomie, leur culture et leurs expériences locales.">
+        France is more than its famous landmarks. Discover the riverside beauty of Lyon, the sunny Mediterranean coast of Nice, the charming streets of Strasbourg, the elegance of Bordeaux and the lively harbour of Marseille. Explore their stories, food, culture and local experiences with us.
+      </p>
+
+      <a href="#destinations" class="hero-link"
+         data-en="LET'S EXPLORE ↗" data-fr="PARTONS À LA DÉCOUVERTE ↗">
+        LET'S EXPLORE ↗
+      </a>
+
+      <p class="handwritten" data-en="your next adventure awaits ♡"
+         data-fr="votre prochaine aventure vous attend ♡">
+        your next adventure awaits ♡
+      </p>
+    </div>
+
+    <div class="hero-collage" id="heroCollage">
+      <!-- The five city photographs will be added by app.js -->
+    </div>
+  </header>
+
+  <section class="welcome">
+    <p class="eyebrow" data-en="NOT JUST A PLACE TO VISIT"
+       data-fr="BIEN PLUS QU'UN LIEU À VISITER">
+      NOT JUST A PLACE TO VISIT
+    </p>
+
+    <h2 data-en="A feeling, a flavour, a story."
+        data-fr="Une ambiance, une saveur, une histoire.">
+      A feeling, a flavour, a story.
+    </h2>
+
+    <p data-en="From a long lunch in a neighbourhood restaurant to a sunset walk beside the water, every French city has its own personality."
+       data-fr="D'un long déjeuner dans un restaurant de quartier à une promenade au coucher du soleil, chaque ville française a sa propre personnalité.">
+      From a long lunch in a neighbourhood restaurant to a sunset walk beside the water, every French city has its own personality.
+    </p>
+  </section>
+
+  <main>
+    <section class="destinations" id="destinations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-en="YOUR LITTLE TRAVEL JOURNAL"
+             data-fr="VOTRE PETIT CARNET DE VOYAGE">
+            YOUR LITTLE TRAVEL JOURNAL
+          </p>
+
+          <h2 data-en="Where will you go next?"
+              data-fr="Où irez-vous ensuite ?">
+            Where will you go next?
+          </h2>
+        </div>
+
+        <p data-en="Choose one of our five destinations and discover its attractions, local food, restaurants, hotels and cultural experiences."
+           data-fr="Choisissez l'une de nos cinq destinations et découvrez ses attractions, sa gastronomie, ses restaurants, ses hôtels et ses expériences culturelles.">
+          Choose one of our five destinations and discover its attractions, local food, restaurants, hotels and cultural experiences.
+        </p>
+      </div>
+
+      <div id="cityGallery" class="city-gallery"></div>
+    </section>
+
+    <section class="city-guide" id="guide">
+      <div class="guide-heading">
+        <p class="eyebrow" data-en="OPEN YOUR CITY GUIDE"
+           data-fr="OUVREZ VOTRE GUIDE DE VILLE">
+          OPEN YOUR CITY GUIDE
+        </p>
+
+        <h2 data-en="A closer look at each place."
+            data-fr="Découvrons chaque ville de plus près.">
+          A closer look at each place.
+        </h2>
+
+        <p data-en="Choose a city to explore."
+           data-fr="Choisissez une ville à explorer.">
+          Choose a city to explore.
+        </p>
+      </div>
+
+      <div id="cityTabs" class="city-tabs"></div>
+
+      <div id="cityContent" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2>bonjour, france ♡</h2>
+
+    <p data-en="Five cities, a thousand memories. Made with curiosity and a little French sunshine."
+       data-fr="Cinq villes, mille souvenirs. Créé avec curiosité et un peu de soleil français.">
+      Five cities, a thousand memories. Made with curiosity and a little French sunshine.
+    </p>
+
+    <div>LYON · NICE · STRASBOURG · BORDEAUX · MARSEILLE</div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
