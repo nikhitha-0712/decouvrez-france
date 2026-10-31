@@ -1,4 +1,4 @@
-const CACHE_NAME = "bonjour-france-v1";
+const CACHE_NAME = "bonjour-france-v2";
 
 const APP_FILES = [
   "./",
